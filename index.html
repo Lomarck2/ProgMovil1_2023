@@ -25,5 +25,34 @@
           <li><a href="#" id="btLogin" data-toggle="modal" data-target="#modalLogin" ><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
         </div>
     </nav>
+    <div id="modalLogin" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Iniciar Sesión</h4>
+          </div>
+          <div class="modalx-body">
+            <div class="form-group">
+                <i class="fa fa-user"></i>
+                <input type="text" class="form-control" placeholder="Username" required="required" id="txtUser">
+            </div>
+            <div class="form-group">
+                <i class="fa fa-lock"></i>
+                <input type="password" class="form-control" placeholder="Password" required="required" id="txtPass">                 
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn btn-primary btn-block btn-lg" value="Login" onclick="login();">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
 </body>
 </html>
